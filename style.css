@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color:#F3E5F5;
+  color: purple;
+}
+
+h1 {
+  color:purple;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+select,input {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: purple;
+  padding: 5px;
+  width: 250px;
+  max-width: 100%;
+  background: linear-gradient(135deg, #fdd6f9, #e6b3ff);
+  border: 2px solid purple;
+}
+
+input[type="submit"], button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color:purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fdd6f9, #e6b3ff);
+  font-size: 1rem;
+  line-height: 1.7;
+
+ 
+}
+
+#result strong {
+  font-weight: bold;
+  color: purple;
+}
+
+#result em {
+  font-style: italic;
+  display: block;
+  margin-top: 10px;
+  color:purple;
+}
+

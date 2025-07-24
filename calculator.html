@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>India Carbon Cost Calculator (₹)</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1>Your Carbon Footprint (₹)</h1>
+
+  <form>
+    <label for="transport">Daily Transport Mode:</label>
+    <select id="transport">
+      <option value="car_petrol">Car (Petrol)</option>
+      <option value="car_diesel">Car (Diesel)</option>
+      <option value="bus">Bus</option>
+      <option value="metro">Metro</option>
+      <option value="train_electric">Train (Electric)</option>
+      <option value="bike">Bike/Scooter</option>
+      <option value="walk">Walk</option>
+    </select>
+
+    <label for="distance">Distance Travelled Daily (in km):</label>
+    <input type="number" id="distance" placeholder="e.g., 10" />
+
+    <label for="electricity">Monthly Electricity Usage (kWh):</label>
+    <input type="number" id="electricity" placeholder="e.g., 120" />
+
+    <label for="meatMeals">Meat-Based Meals Per Week:<br>
+        (0 If You are Vegetarian)<br>
+    (3 meals a day, 21 meals per week)</label>
+    <input type="number" id="meatMeals" min="0" max="21" value="0"  />
+
+    <label for="garbage">Garbage Generated Weekly(approximately in kg)</label>
+     <input type="number" id="garbage" value="2" />
+     <label for="housing">Housing Type:</label>
+  <select id="housing">
+    <option value="apartment_small">Apartment (1–2 BHK)</option>
+    <option value="apartment_large">Apartment (3+ BHK)</option>
+    <option value="house">Independent House</option>
+    <option value="villa">Luxury Villa</option>
+  </select>
+
+  <label for="clothing">Clothing Items Purchased Per Month:</label>
+  <input type="number" id="clothing" value="2" />
+
+
+    <button type="button" onclick="calculateIndianCarbon()">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+</body>
+</html>
